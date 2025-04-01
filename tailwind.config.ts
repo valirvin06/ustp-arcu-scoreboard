@@ -58,6 +58,13 @@ export default {
 					light: '#a83232',
 					dark: '#5c0000',
 					gold: '#FFD700'
+				},
+				arcu: {
+					purple: '#491880',
+					orange: '#FF8C00',
+					green: '#32CD32',
+					yellow: '#FFD700',
+					brown: '#8B4513'
 				}
 			},
 			borderRadius: {
@@ -95,6 +102,9 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'score-update': 'score-update 2s ease-out'
+			},
+			backgroundImage: {
+				'arcu-pattern': "url('/lovable-uploads/760aac40-3c36-4b8a-b785-069ef6a47921.png')"
 			}
 		}
 	},
