@@ -20,11 +20,12 @@ const LandingPage = () => {
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0" 
-        style={{ backgroundImage: "url('/lovable-uploads/latest-upload.png')" }}
+        style={{ backgroundImage: "url('/lovable-uploads/d1d382c5-6db8-4c3f-a420-623fa4de07bc.png')" }}
       >
-        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
       </div>
       
+      {/* Content container */}
       <motion.div 
         className="z-10 text-center p-8 bg-black/30 backdrop-blur-md rounded-xl border border-white/20 shadow-2xl max-w-3xl w-full"
         initial={{ opacity: 0, y: 20 }}
