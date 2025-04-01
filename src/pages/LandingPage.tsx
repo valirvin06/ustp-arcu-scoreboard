@@ -31,16 +31,19 @@ const LandingPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <motion.h1 
-          className="text-3xl md:text-5xl font-bold mb-6 text-white"
-          initial={{ y: -20 }}
-          animate={{ y: 0 }}
+        <motion.div
+          className="mb-8 flex justify-center"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          <span className="text-arcu-purple">AR</span>
-          <span className="text-arcu-orange">CU</span>
-          <span className="text-white"> DAYS 2025</span>
-        </motion.h1>
+          {/* ArCu Logo */}
+          <img 
+            src="/lovable-uploads/13e6d360-b240-429c-9d62-8e78ffd8fdcb.png" 
+            alt="ArCu Days 2025 Logo" 
+            className="w-64 h-64 object-contain"
+          />
+        </motion.div>
         
         <motion.h2
           className="text-xl md:text-2xl mb-6 text-white"
@@ -50,46 +53,6 @@ const LandingPage = () => {
         >
           USTP Claveria Arts and Culture Festival
         </motion.h2>
-        
-        <motion.div
-          className="mb-8 flex justify-center"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-        >
-          <div className="relative w-40 h-40 flex items-center justify-center">
-            {/* ArCu Logo Petals */}
-            {[...Array(8)].map((_, i) => (
-              <div 
-                key={i}
-                className="absolute w-full h-full" 
-                style={{ 
-                  transform: `rotate(${i * 45}deg)`,
-                }}
-              >
-                <div 
-                  className={`w-10 h-16 mx-auto rounded-t-full rounded-b-full ${
-                    i % 4 === 0 ? 'bg-arcu-purple' : 
-                    i % 4 === 1 ? 'bg-arcu-green' : 
-                    i % 4 === 2 ? 'bg-arcu-yellow' : 'bg-arcu-orange'
-                  }`}
-                  style={{ transformOrigin: 'bottom center' }}
-                ></div>
-              </div>
-            ))}
-            
-            {/* Center Logo Text */}
-            <div className="z-10 bg-white rounded-full w-28 h-28 flex items-center justify-center">
-              <div>
-                <div className="font-bold text-2xl">
-                  <span className="text-arcu-purple">AR</span>
-                  <span className="text-arcu-orange">CU</span>
-                </div>
-                <div className="text-arcu-brown text-xs font-semibold">DAYS 2025</div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
         
         <motion.p
           className="text-white text-lg md:text-xl mb-8"
