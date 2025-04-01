@@ -20,7 +20,7 @@ const LandingPage = () => {
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0" 
-        style={{ backgroundImage: "url('/lovable-uploads/760aac40-3c36-4b8a-b785-069ef6a47921.png')" }}
+        style={{ backgroundImage: "url('/lovable-uploads/latest-upload.png')" }}
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       </div>
