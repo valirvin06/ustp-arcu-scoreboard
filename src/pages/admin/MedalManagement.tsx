@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useScoreboard, MedalType } from '@/context/ScoreboardContext';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Medal, Trash2 } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from "sonner";
 
 const MedalManagement = () => {
   const { teams, events, categories, removeEventResult } = useScoreboard();

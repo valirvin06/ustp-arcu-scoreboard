@@ -1,6 +1,6 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from "sonner";
 
 // Define types
 export type MedalType = 'Gold' | 'Silver' | 'Bronze' | 'Non-winner' | 'No Entry';

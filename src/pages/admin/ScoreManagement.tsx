@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useScoreboard, MedalType } from '@/context/ScoreboardContext';
 import { Button } from '@/components/ui/button';
@@ -7,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { toast } from '@/components/ui/sonner';
+import { toast } from "sonner";
 
 const ScoreManagement = () => {
   const { teams, events, categories, updateEventResult } = useScoreboard();
@@ -32,7 +31,6 @@ const ScoreManagement = () => {
     return event.results.find(r => r.teamId === teamId) || null;
   };
 
-  // Get events filtered by the selected category
   const filteredEvents = activeCategory
     ? events.filter(event => event.category === activeCategory)
     : [];

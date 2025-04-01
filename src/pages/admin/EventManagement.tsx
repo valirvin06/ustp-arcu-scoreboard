@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useScoreboard } from '@/context/ScoreboardContext';
 import { Button } from '@/components/ui/button';
@@ -9,7 +8,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Pencil, Trash2, Plus } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from "sonner";
 
 const EventManagement = () => {
   const { events, categories, addEvent, removeEvent, addCategory, removeCategory } = useScoreboard();

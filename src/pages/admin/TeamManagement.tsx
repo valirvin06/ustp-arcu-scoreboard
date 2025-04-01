@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useScoreboard } from '@/context/ScoreboardContext';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Label } from '@/components/ui/label';
 import { Pencil, Trash2, Plus, Upload } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from "sonner";
 
 const TeamManagement = () => {
   const { teams, addTeam, updateTeam, removeTeam } = useScoreboard();
